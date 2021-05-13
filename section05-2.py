@@ -62,11 +62,19 @@ my_info = {
     "city": "Seoul"
 }
 
+# 기본값은 키
 for key in my_info:
     print(key, ":", my_info[key])
 
+for key in my_info.keys():
+    print("my_Info key : ", key)
+
 for val in my_info.values():
-    print(val)
+    print("my_Info value : ", val)
+
+# item = key+value
+for k, v in my_info.items():
+    print("my_info key, value: ", k, v)
 
 # 예제5
 name = 'KennRY'
